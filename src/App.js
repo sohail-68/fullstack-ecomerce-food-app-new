@@ -1,25 +1,66 @@
-import logo from './logo.svg';
-import './App.css';
+// import React, { useState } from 'react'
+// import Parent from "../src/formValidation/Parent"
+// import Form from './formValidation/Form'
+// import Formone from './formValidation/Formone'
+// import "./App.css"
+// const App = () => {
 
-function App() {
+//   const[show,setshow]=useState("form")
+
+
+//   return (
+    
+
+
+// <>
+// <ul>
+//   <li onClick={()=>setshow("form")}
+//   className={`${show==="form"?"helo":""}`}
+
+//   >form</li>
+//   <li onClick={()=>setshow("parent")}
+//   className={`${show==="parent"?"s":""}`}
+  
+//   >parent</li>
+// </ul>
+
+// {
+//   show==="form"? <Form
+//   show={show}
+//   setshow={setshow}
+//   />:  
+//   <Parent
+  
+//   show={show}
+//   setshow={setshow}
+//   />
+
+// }
+
+// </>
+
+
+//   )
+// }
+
+// export default App
+
+
+import React from 'react'
+import Locastorge from './LocalStroge/Locastorge'
+import Form from './formValidation/Form'
+import ProductList from './ProductList/ProductList'
+import "./App.css"
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+{/* <Form/> */}
+
+      {/* <Locastorge/> */}
+      <ProductList/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
